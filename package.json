@@ -1,5 +1,5 @@
 {
-  "name": "best_todo_ever",
+  "name": "todo_project",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.4.29",
-    "vue-router": "^4.4.0"
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",

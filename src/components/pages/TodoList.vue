@@ -1,11 +1,15 @@
+<!-- TodoList.vue -->
 <script>
+import TodoItem from '@/components/TodoItem.vue';
+
 export default {
-    name: "TodoList",
+    name: 'TodoList',
+    components: { TodoItem },
     data() {
         return {
             todos: [],
             newTodoText: '',
-        }
+        };
     },
     methods: {
         addTodo() {
@@ -20,8 +24,8 @@ export default {
         deleteTodo(index) {
             this.todos.splice(index, 1);
         }
-    },
-}
+    }
+};
 </script>
 
 <template>
@@ -29,16 +33,16 @@ export default {
     <input v-model="newTodoText" type="text" placeholder="Enter your Todo">
     <button @click="addTodo">Add</button>
     <ul>
-        <li v-for="(todo, index) in todos" :key="index">
-            <span :class="{ done: todo.done }">{{ todo.text }}</span>
-            <input type="checkbox" :checked="todo.done" @change="toggleDone(index)">
-            <button @click="deleteTodo(index)">Delete</button>
-        </li>
+        <TodoItem
+            v-for="(todo, index) in todos"
+            :key="index"
+            :todo="todo"
+            :index="index"
+            @toggle-done="toggleDone"
+            @delete-todo="deleteTodo"
+        />
     </ul>
 </template>
 
 <style scoped>
-.done {
-    text-decoration: line-through;
-}
 </style>
