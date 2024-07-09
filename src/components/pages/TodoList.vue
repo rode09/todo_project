@@ -1,10 +1,10 @@
 <!-- TodoList.vue -->
 <script>
-import TodoItem from '@/components/TodoItem.vue';
+import ItemTodo from '@/components/ItemTodo.vue';
 
 export default {
     name: 'TodoList',
-    components: { TodoItem },
+    components: { ItemTodo },
     data() {
         return {
             todos: [],
@@ -33,7 +33,7 @@ export default {
     <input v-model="newTodoText" type="text" placeholder="Enter your Todo">
     <button @click="addTodo">Add</button>
     <ul>
-        <TodoItem
+        <ItemTodo
             v-for="(todo, index) in todos"
             :key="index"
             :todo="todo"
