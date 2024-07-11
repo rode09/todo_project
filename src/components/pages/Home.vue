@@ -5,9 +5,15 @@ export default {
 </script>
 
 <template>
-    <h1>Home Page</h1>
+
 </template>
 
 <style scoped>
-
+.home {
+    display: flex;
+    }
+.home img {
+    width: 100%;
+    height: auto;
+}
 </style>

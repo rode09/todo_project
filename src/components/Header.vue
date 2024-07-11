@@ -37,5 +37,5 @@ export default {
 </template>
 
 <style>
-
+    @import '../assets/header.css';
 </style>

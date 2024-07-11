@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
+    background-image: url('../components/pages/images/grove_street.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+.nav__list {
+  list-style-type: none;
+}
+
+.nav__list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Pricedown, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .nav__list a:hover {
+    text-shadow: 0 0 10px rgba(0, 191, 255, 1);
+  }
