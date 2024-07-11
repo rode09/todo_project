@@ -8,9 +8,15 @@ export default {
 </script>
 
 <template>
-    <Header/>
+    <Header />
 
-    <RouterView/>
+    <main>
+        <div class="kunteynir">
+            <RouterView />
+        </div>
+    </main>
+
+    <footer style="height: 50px; background: rosybrown"></footer>
 </template>
 
 <style>

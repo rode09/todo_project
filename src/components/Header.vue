@@ -36,6 +36,4 @@ export default {
     </header>
 </template>
 
-<style>
-    @import '../assets/header.css';
-</style>
+<style></style>

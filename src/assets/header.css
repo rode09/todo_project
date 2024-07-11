@@ -3,24 +3,25 @@
     text-align: center;
     justify-content: center;
     padding: 25px;
-    background-image: url('../components/pages/images/grove_street.jpg');
+    background-image: url('../assets/img/grove_street.jpg');
     background-size: cover;
     background-position: center;
-  }
-
-.nav__list {
-  list-style-type: none;
 }
 
-.nav__list a {
+.nav__list {
+    list-style-type: none;
+}
+
+.nav__item a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Pricedown, sans-serif;
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
+    font-family: groove-street, sans-serif;
+    transition: text-shadow 0.3s ease;
+}
 
-  .nav__list a:hover {
+.nav__item a:hover {
     text-shadow: 0 0 10px rgba(0, 191, 255, 1);
-  }
+}
